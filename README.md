@@ -17,8 +17,8 @@
   <a href="#-精選專案-featured-projects">精選專案</a> •
   <a href="#-證照與檢定-certifications">證照檢定</a> •
   <a href="#-領導與活動經歷-leadership--activities">領導與社群</a> •
-  <a href="./Jerry_Chen_OnePage_Resume.pdf"><b>📄 一頁式簡歷 (PDF)</b></a> •
-  <a href="./Jerry_Chen_OnePage_Resume.png">🖼️ 預覽圖</a> •
+  <a href="./陳宏哲_BUB履歷.pdf"><b>📄 陳宏哲_BUB履歷 (PDF)</b></a> •
+  <a href="./陳宏哲_BUB履歷.png">🖼️ 預覽圖</a> •
   <a href="./RESUME.md">中文完整履歷</a> •
   <a href="./RESUME_EN.md">English CV</a> •
   <a href="./Jerry_Chen_CV.yaml">RenderCV 原始檔</a>
@@ -154,4 +154,4 @@
 - **Email**: [jerry940917@gmail.com](mailto:jerry940917@gmail.com)
 - **GitHub**: [github.com/jerry940917chen](https://github.com/jerry940917chen)
 - **推薦人**: 輔仁大學 理工學院 人工智慧與資訊安全學士學位學程 李俊達 教授 (`157278@mail.fju.edu.tw`)
-- 📄 查看更詳細的履歷資訊：[繁體中文履歷 (RESUME.md)](./RESUME.md) ｜ [English CV (RESUME_EN.md)](./RESUME_EN.md)
+- 📄 查看完整履歷資訊：[一頁式精華 (陳宏哲_BUB履歷.pdf)](./陳宏哲_BUB履歷.pdf) ｜ [繁體中文完整履歷 (RESUME.md)](./RESUME.md) ｜ [English CV (RESUME_EN.md)](./RESUME_EN.md)

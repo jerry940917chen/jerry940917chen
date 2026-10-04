@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>陳宏哲 Jerry Chen - 一頁式中文履歷</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    html, body {
+      font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1e293b;
+      background-color: #ffffff;
+      width: 210mm;
+      max-height: 295mm;
+      padding: 6mm 11mm 5mm 11mm;
+      overflow: hidden;
+      line-height: 1.4;
+      font-size: 8.5pt;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 9px;
+      border-bottom: 2px solid #0284c7;
+      margin-bottom: 9px;
+    }
+
+    .header-left {
+      flex: 1;
+      padding-right: 16px;
+    }
+
+    .name-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 3px;
+    }
+
+    .name {
+      font-size: 21pt;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: 0.5px;
+    }
+
+    .en-name {
+      font-size: 11pt;
+      font-weight: 500;
+      color: #64748b;
+    }
+
+    .title {
+      font-size: 9.8pt;
+      font-weight: 600;
+      color: #0284c7;
+      margin-bottom: 6px;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 6px;
+    }
+
+    .badge {
+      font-size: 7.5pt;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: #f0fdf4;
+      color: #166534;
+      border: 1px solid #bbf7d0;
+    }
+
+    .badge.blue {
+      background: #f0f9ff;
+      color: #0369a1;
+      border-color: #bae6fd;
+    }
+
+    .badge.purple {
+      background: #faf5ff;
+      color: #7e22ce;
+      border-color: #e9d5ff;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 8pt;
+      color: #475569;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Headshot placed properly on the top-right */
+    .headshot-container {
+      width: 82px;
+      height: 108px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 2px solid #cbd5e1;
+      box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.08);
+      flex-shrink: 0;
+      background: #f8fafc;
+    }
+
+    .headshot-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    /* Layout Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: 32.5% 65.5%;
+      gap: 15px;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* Section Styling */
+    .section-title {
+      font-size: 9.6pt;
+      font-weight: 700;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding-bottom: 2px;
+      border-bottom: 1.5px solid #0284c7;
+      margin-bottom: 5px;
+      letter-spacing: 0.3px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 6px 9px;
+      margin-bottom: 5px;
+    }
+
+    .card-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .card-title {
+      font-weight: 700;
+      color: #1e293b;
+      font-size: 8.8pt;
+    }
+
+    .card-date {
+      font-size: 7.4pt;
+      color: #64748b;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .card-sub {
+      font-size: 7.8pt;
+      color: #0284c7;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .card-desc {
+      font-size: 7.7pt;
+      color: #334155;
+      line-height: 1.4;
+    }
+
+    .bullet-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .bullet-list li {
+      position: relative;
+      padding-left: 10px;
+      font-size: 7.7pt;
+      color: #334155;
+      line-height: 1.4;
+      margin-bottom: 3px;
+    }
+
+    .bullet-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #0284c7;
+      font-weight: bold;
+    }
+
+    /* Skill tags */
+    .skill-group {
+      margin-bottom: 6px;
+    }
+
+    .skill-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-label {
+      font-size: 7.6pt;
+      font-weight: 700;
+      color: #475569;
+      margin-bottom: 3px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .tag {
+      font-size: 7.2pt;
+      background: #f1f5f9;
+      color: #334155;
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header: Symmetrical layout with Headshot on the Right -->
+  <header class="header">
+    <div class="header-left">
+      <div class="name-row">
+        <h1 class="name">陳宏哲</h1>
+        <span class="en-name">Jerry Chen</span>
+      </div>
+      <div class="title">輔仁大學 人工智慧與資訊安全學程（資安組） ｜ 輔修 企業管理學系</div>
+      <div class="badges">
+        <span class="badge">🛡️ 2025 iPAS 中級資安工程師</span>
+        <span class="badge blue">🌍 AMEE 2026 論文共同作者</span>
+        <span class="badge blue">⚔️ 2026 教育體系資安攻防檢測員</span>
+        <span class="badge purple">👥 輔大資安系學會 會長</span>
+        <span class="badge purple">💡 輔大創新創業社</span>
+        <span class="badge purple">🏆 台北市市長獎 ｜ 系排第 3 名</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-item">✉️ jerry940917@gmail.com</span>
+        <span class="contact-item">📍 台北市信義區</span>
+        <span class="contact-item">💻 github.com/jerry940917chen</span>
+        <span class="contact-item">🔗 linkedin.com/in/jerry940917chen</span>
+      </div>
+    </div>
+    <!-- Right-aligned Headshot -->
+    <div class="headshot-container">
+      <img src="./assets/headshot.jpg" alt="陳宏哲 形象照">
+    </div>
+  </header>
+
+  <!-- Main Grid -->
+  <div class="grid">
+    <!-- Left Column: Education, Certifications, Awards, Skills -->
+    <div class="col">
+      
+      <!-- Education -->
+      <section>
+        <h2 class="section-title">🎓 學歷背景</h2>
+        <div class="card">
+          <div class="card-title-row">
+            <span class="card-title">天主教輔仁大學</span>
+            <span class="card-date">2024.09 - 2028.06</span>
+          </div>
+          <div class="card-sub">人工智慧與資訊安全學程 (資安組)</div>
+          <ul class="bullet-list">
+            <li>大一上總成績全系<strong>第 3 名</strong> (平均 89.76 / 53 人)</li>
+            <li>程式設計 (Java) 課程獲 <strong>93 分</strong> 高分</li>
+            <li><strong>輔修企業管理學系</strong>：修習經濟、市場與管理</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title-row">
+            <span class="card-title">台北市立萬芳高中</span>
+            <span class="card-date">2021.09 - 2024.06</span>
+          </div>
+          <div class="card-sub">普通科 (數位學習實驗班)</div>
+          <ul class="bullet-list">
+            <li>榮獲 <strong>台北市市長獎</strong> 殊榮畢業</li>
+            <li>特殊選才錄取 4 間以上大專院校資訊科系</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section>
+        <h2 class="section-title">📜 專業證照與檢定</h2>
+        <div class="card">
+          <ul class="bullet-list">
+            <li><strong>2025 iPAS 資安工程師中級 (獲證)</strong><br>防護實務 <strong>87.5 分</strong> ｜ 規劃實務 <strong>80 分</strong><br>涵蓋 ISO 27001、紅藍演練與系統防護。</li>
+            <li><strong>APCS 大學程式設計先修檢測</strong><br>觀念題 <strong>4 級分</strong> ｜ 實作題 <strong>2 級分</strong></li>
+            <li><strong>MTA: Python 程式設計國際認證</strong><br>考取 <strong>83 分</strong> (合格門檻 70 分)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Honors & Awards -->
+      <section>
+        <h2 class="section-title">🏆 重要競賽榮譽</h2>
+        <div class="card">
+          <ul class="bullet-list">
+            <li><strong>2024 ESG 永續淨零校園提案競賽 銀獎</strong><br>整合跨領域商業策略規劃與數據分析模型。</li>
+            <li><strong>研討會論文發表與海報論文獎</strong><br>ChatGPT 與 Line Bot 應用研究獲獎收錄。</li>
+            <li><strong>科技與生科競賽 7 次獲獎</strong><br>擔任隊長主導 Arduino 韌體與 3D 機體設計。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Technical Skills -->
+      <section>
+        <h2 class="section-title">🛠️ 核心技能專長</h2>
+        <div class="card">
+          <div class="skill-group">
+            <div class="skill-label">資訊安全 (Cybersecurity)</div>
+            <div class="skill-tags">
+              <span class="tag">滲透測試</span>
+              <span class="tag">BFLA/BOLA 弱掃</span>
+              <span class="tag">Kali Linux</span>
+              <span class="tag">ISO 27001</span>
+              <span class="tag">逆向工程</span>
+              <span class="tag">RSA 密碼學</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">程式與 AI (Dev & AI)</div>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Django</span>
+              <span class="tag">Java</span>
+              <span class="tag">C/C++</span>
+              <span class="tag">LLM & RAG</span>
+              <span class="tag">機器學習</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">系統與工具 (DevOps & Tools)</div>
+            <div class="skill-tags">
+              <span class="tag">Docker</span>
+              <span class="tag">Git / GitHub</span>
+              <span class="tag">Linux / Vim</span>
+              <span class="tag">Arduino</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Right Column: Experience, Projects (Clean, No photos at bottom right) -->
+    <div class="col">
+      
+      <!-- Experience & Leadership -->
+      <section>
+        <h2 class="section-title">⚔️ 實務檢驗與團隊領導</h2>
+        <div class="card">
+          <div class="card-title-row">
+            <span class="card-title">2026 教育體系資安攻防演練 — 攻防檢測員</span>
+            <span class="card-date">2026</span>
+          </div>
+          <ul class="bullet-list">
+            <li>受邀參與教育部主管體系之資安實戰攻防，針對受檢單位執行<strong>實機漏洞驗證與紅藍方滲透評估</strong>。</li>
+            <li>精準排查系統 BFLA（垂直越權）、未授權 API 存取與組態配置弱點，提供專業修復指引與合規建議。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title-row">
+            <span class="card-title">輔仁大學 人工智慧與資訊安全系學會 — 會長</span>
+            <span class="card-date">2025.09 - 至今</span>
+          </div>
+          <ul class="bullet-list">
+            <li>領導 <strong>20 人核心幹部團隊</strong>，統籌年度運作預算、贊助商談判及跨系所聯合運營。</li>
+            <li>主辦超過 5 場大型活動（包括 100+ 人參與之跨系耶誕舞會），活動累計觸及 300+ 人次。</li>
+            <li>具備高抗壓跨部門溝通、團隊激勵與危機處置協調能力。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects: Fully expanded, well-spaced, clean -->
+      <section>
+        <h2 class="section-title">🚀 代表性專案與學術研發</h2>
+        
+        <div class="card">
+          <div class="card-title-row">
+            <span class="card-title">[AMEE 2026] 國際醫學教育研討會 LLM 與 RAG 應用論文</span>
+            <span class="card-date">共同作者 ｜ 2026</span>
+          </div>
+          <div class="card-desc">
+            國際頂尖研討會 AMEE 2026 錄取發表。探討大型語言模型結合檢索增強生成（RAG）架構在專業醫學場景的落地實踐，設計精確文檔切片、向量嵌入檢索與 Prompt 工程降低幻覺，確保提供高可靠度的臨床模擬與指引。
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title-row">
+            <span class="card-title">自動化 API 授權漏洞掃描工具 (BFLA/BOLA Scanner)</span>
+            <span class="card-date">GitHub 開源 ｜ 2026</span>
+          </div>
+          <div class="card-desc">
+            針對 OWASP API Top 10 越權漏洞開發之自動化掃描器。透過 Swagger/OpenAPI 自動建構端點地圖，實作<strong>多角色 Token 跨情境重放測試</strong>（Cross-Context Replay），搭配 Docker 容器化靶機整合驗證，強化 API 上線前安全把關。
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title-row">
+            <span class="card-title">ChatGPT × LINE Bot 英語查詢智慧助教系統</span>
+            <span class="card-date">研討會發表與海報論文獎 ｜ 2023</span>
+          </div>
+          <div class="card-desc">
+            以 Python Django 框架搭建後端服務，串接 OpenAI GPT-3 API 與 LINE Messaging API。設計學測關鍵字即時解析複習介面，兼顧使用體驗與 Prompt 穩定性，成果發表於商管研討會並獲最佳海報論文獎。
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title-row">
+            <span class="card-title">企業資通安全內部控制有效性之個案研究</span>
+            <span class="card-date">資安合規研究</span>
+          </div>
+          <div class="card-desc">
+            從監理法規視角出發，盤點資安風險管理重點，比對個案公司內部控制措施，設計企業內部自評檢核點，提出資安預算與防護期程最佳化配置建議。
+          </div>
+        </div>
+      </section>
+
+      <!-- Innovation, Entrepreneurship & Finance Practice -->
+      <section>
+        <h2 class="section-title">💡 創新創業與多元實務</h2>
+        <div class="card">
+          <div class="card-title-row">
+            <span class="card-title">輔仁大學 創新創業社 — 商業模式驗證與 MVP 實踐</span>
+            <span class="card-date">2024.09 - 至今</span>
+          </div>
+          <ul class="bullet-list">
+            <li><strong>精實創業與痛點探索</strong>：運用精實畫布（Lean Canvas）深入訪談目標客群，探索校園與數位真實痛點，確立清晰的價值主張與商業可行性。</li>
+            <li><strong>MVP 敏捷開發與市場驗證</strong>：結合 AI 應用與全端工程實力，敏捷打造低成本最小可行性產品（MVP），透過使用者回饋數據進行快速迭代。</li>
+            <li><strong>跨域整合與 Pitch 提案</strong>：融合輔修企管的財務/市場思維，主導跨領域團隊協作、市場競爭者分析與商業路演，具備高度自驅的創業家精神。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title-row">
+            <span class="card-title">輔仁大學 金融投資社 — 量化程式交易與市場策略</span>
+            <span class="card-date">2024.09 - 至今</span>
+          </div>
+          <ul class="bullet-list">
+            <li><strong>全自動量化系統開發</strong>：融合資訊演算法與企管財務分析，自主開發台股量化交易系統（QuantEdge Pro），實作多策略集成與回測驗證。</li>
+            <li><strong>三層風控體系與市場微結構</strong>：建構「前置限額 → 組合 VaR → 極端行情熔斷」多層防護機制，深入研究市場流動性、籌碼面與波動模型。</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+</body>
+</html>

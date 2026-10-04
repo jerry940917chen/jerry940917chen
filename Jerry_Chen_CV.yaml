@@ -1,0 +1,109 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Jerry Chen (陳宏哲)
+  headline: Cybersecurity & AI Enthusiast | iPAS Certified Intermediate Information Security Engineer
+  location: Taipei, Taiwan
+  email: jerry940917@gmail.com
+  website: https://jerry940917chen.github.io/jerry940917chen/
+  social_networks:
+    - network: GitHub
+      username: jerry940917chen
+    - network: LinkedIn
+      username: jerry940917chen
+  sections:
+    education:
+      - institution: Fu Jen Catholic University (天主教輔仁大學)
+        area: Artificial Intelligence & Information Security (資安組)
+        degree: BS
+        start_date: 2024-09
+        end_date: 2028-06
+        location: Taipei, Taiwan
+        highlights:
+          - 'Ranked **3rd / 53 students** in department (Average: 89.76/100); Java Programming: **93/100**'
+          - 'Minor in **Business Administration (企業管理學系)**: Economics, Marketing, Strategic Analysis (2025 – Present)'
+      - institution: Taipei Municipal Wanfang High School (台北市立萬芳高中)
+        area: Digital Learning Experimental Program
+        degree: High School Diploma
+        start_date: 2021-09
+        end_date: 2024-06
+        location: Taipei, Taiwan
+        highlights:
+          - "Recipient of **Taipei City Mayor's Award (台北市市長獎)**; admitted via Special Talent Admission"
+    experience:
+      - company: 2026 Ministry of Education Cyber Defense Exercise (2026 教育體系資安攻防演練)
+        position: Cybersecurity Attack-Defense Inspector (攻防檢測員)
+        date: 2026
+        location: Taipei, Taiwan
+        highlights:
+          - Conducted real-world offensive-defensive drills, web penetration testing, and authorization flaw analysis
+          - Identified critical BFLA/access control vulnerabilities and delivered remediation roadmaps for institutions
+      - company: AI & Information Security Student Association, FJU (輔大資安系學會)
+        position: President (系學會會長)
+        start_date: 2025-09
+        end_date: present
+        location: Taipei, Taiwan
+        highlights:
+          - Leading a 20-person executive board, successfully organized 5+ major events (100+ attendees, 300+ reach)
+          - Managing annual budget allocation, corporate sponsorships, and cross-departmental operations
+    certifications:
+      - bullet: '**2025 iPAS 資訊安全工程師中級能力鑑定 (獲證)**: 防護實務 **87.5 分** / 中級規劃實務 **80 分**'
+      - bullet: '**APCS 大學程式設計先修檢測**: 觀念題 **4 級分** / 實作題 **2 級分**'
+      - bullet: '**Microsoft Technology Associate (MTA)**: Python Programming Certification (**83 分**)'
+    honors_and_awards:
+      - bullet: '🌍 **AMEE 2026 國際醫學教育研討會**: 論文共同作者（LLM 與 RAG 應用研究發表）'
+      - bullet: '🥈 **2024 打造綠色校園！ESG 永續淨零提案競賽**: **銀獎** (Net-Zero Campus Sustainability Proposal)'
+      - bullet: '🥇 **學術研討會論文發表與最佳海報論文獎**: ChatGPT 與 Line Bot 應用研究'
+      - bullet: '🏆 **科技與生活科技競賽 7 次獲獎**: 擔任隊長主導硬體設計 (Arduino + Rhino 3D)'
+    projects:
+      - name: "AMEE 2026: LLM & RAG Application in Medical Education"
+        date: 2026
+        highlights:
+          - Co-authored paper accepted at AMEE 2026 exploring LLM & RAG architectures in clinical simulations
+          - Engineered contextual vector retrieval, chunking pipelines, and prompt frameworks to minimize hallucinations
+      - name: Automated API Authorization Scanner (BFLA/BOLA)
+        date: 2026
+        highlights:
+          - Developed automated scanner detecting Broken Function Level Authorization (BFLA) using Python/FastAPI
+          - Implemented cross-context token replay algorithms against OpenAPI specs; Dockerized test environments
+      - name: English_ChatGpt_Line (ChatGPT & Line Bot English Learning Assistant)
+        date: 2023
+        highlights:
+          - Integrated OpenAI GPT-3 with LINE Messaging API using Django & ngrok for instant vocabulary query workflows
+          - Awarded Best Conference Paper & Poster Award for reliable LLM prompt engineering in education
+    skills:
+      - label: Cybersecurity
+        details: Penetration Testing, BFLA/BOLA (OWASP Top 10), Kali Linux, Buffer Overflow, RSA Cryptography, ISO 27001
+      - label: Programming & AI
+        details: Python (FastAPI, Django), Java, C/C++, C#, SQL, LLM & RAG, Machine Learning (Scikit-Learn), HTML/CSS
+      - label: Tools & Systems
+        details: Docker, Git/GitHub, Linux (Ubuntu/Kali), Vim, VMware, Arduino, Rhino 3D, Figma
+design:
+  theme: engineeringresumes
+  page:
+    size: a4
+    top_margin: 0.35in
+    bottom_margin: 0.35in
+    left_margin: 0.45in
+    right_margin: 0.45in
+    show_footer: false
+  header:
+    space_below_name: 0.25cm
+    space_below_headline: 0.25cm
+    space_below_connections: 0.25cm
+  section_titles:
+    space_above: 0.22cm
+    space_below: 0.1cm
+  sections:
+    space_between_regular_entries: 0.18cm
+    space_between_text_based_entries: 0.06cm
+  entries:
+    highlights:
+      space_above: 0.05cm
+      space_between_items: 0.05cm
+  typography:
+    line_spacing: 0.38em
+    font_size:
+      body: 8.8pt
+      name: 18pt
+      headline: 8.8pt
+      connections: 8.8pt

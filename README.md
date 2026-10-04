@@ -17,8 +17,11 @@
   <a href="#-精選專案-featured-projects">精選專案</a> •
   <a href="#-證照與檢定-certifications">證照檢定</a> •
   <a href="#-領導與活動經歷-leadership--activities">領導與社群</a> •
+  <a href="./Jerry_Chen_OnePage_Resume.pdf"><b>📄 一頁式簡歷 (PDF)</b></a> •
+  <a href="./Jerry_Chen_OnePage_Resume.png">🖼️ 預覽圖</a> •
   <a href="./RESUME.md">中文完整履歷</a> •
-  <a href="./RESUME_EN.md">English CV</a>
+  <a href="./RESUME_EN.md">English CV</a> •
+  <a href="./Jerry_Chen_CV.yaml">RenderCV 原始檔</a>
 </p>
 
 ---

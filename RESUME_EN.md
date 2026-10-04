@@ -71,8 +71,8 @@ Aspiring Cybersecurity and AI Engineer currently pursuing a Bachelor’s degree 
 - Analyzed regulatory compliance frameworks under the national "Cybersecurity is National Security" doctrine.
 - Formulated an evaluation checklist for corporate internal cybersecurity controls and provided prioritized remediation roadmaps.
 
-### **[GateAway-](https://github.com/jerry940917chen/GateAway-)** | *Co-Developer*
-- Collaborated in developing a 2D/3D action-adventure game using **Unity** and **C#**, managing collision physics, sprite movement, and state controllers.
+### **GateAway- Adventure Game** | *Co-Developer*
+- Collaborated in developing a 2D/3D action-adventure game using **Unity** and **C#**, managing collision physics, sprite movement, and state controllers (planned for Steam release).
 
 ---
 

@@ -74,24 +74,29 @@
 
 ## 🚀 精選專案 (Featured Projects)
 
-### 1. [api-auth-scanner-bfla](https://github.com/jerry940917chen/api-auth-scanner-bfla)
+### 1. [AMEE 2026] 國際醫學教育研討會 LLM 與 RAG 應用論文 (共同作者)
+- **領域**：`Large Language Models (LLM)` `Retrieval-Augmented Generation (RAG)` `Medical Education`
+- **成果榮譽**：國際醫學教育頂級研討會 **AMEE 2026 論文錄取與發表**。
+- **專案簡介**：探討大型語言模型結合檢索增強生成（RAG）架構在專業醫學教育場景之落地應用，透過精準文檔切片、向量嵌入檢索與 Prompt 工程，有效降低幻覺並提升知識檢索準確性。
+
+### 2. [api-auth-scanner-bfla](https://github.com/jerry940917chen/api-auth-scanner-bfla)
 - **技術棧**：`Python` `API Security` `Authorization Vulnerability` `OWASP`
 - **專案簡介**：針對現代 Web API 常見之 **BFLA (Broken Function Level Authorization)** 漏洞設計的自動化授權漏洞掃描工具，精確辨識未授權權限越權呼叫，強化 API 端點防護與合規性。
 
-### 2. [English_ChatGpt_Line](https://github.com/jerry940917chen/English_ChatGpt_Line)
+### 3. [English_ChatGpt_Line](https://github.com/jerry940917chen/English_ChatGpt_Line)
 - **技術棧**：`Python` `Django` `OpenAI GPT-3` `LINE Messaging API` `ngrok`
 - **成果榮譽**：**研討會論文發表錄取**（收錄於論文集）並榮獲**海報發表與論文獎**。
 - **專案簡介**：探討大型語言模型在特定領域之可靠度，以 Django 打造後端伺服器，將 GPT-3 模型與 LINE Bot 對話介面結合，開發專為學測英語詞彙查詢與單字重點複習設計的智慧助教。
 
-### 3. GateAway- 獨立冒險遊戲開發 (團隊專案)
+### 4. GateAway- 獨立冒險遊戲開發 (團隊專案)
 - **技術棧**：`Unity` `C#` `Game Design` `Git Collaboration`
 - **專案簡介**：與團隊成員共同設計開發的跨平台遊戲專案，負責核心物件碰撞偵測、角色運動邏輯控制與系統整合，規畫發行於 Steam 平台。
 
-### 4. 機器學習化學分子性質預測研究
+### 5. 機器學習化學分子性質預測研究
 - **技術棧**：`Python` `Scikit-Learn` `PubChem Database`
 - **專案簡介**：整理與前處理 PubChem 化學資料庫大量分子數據，透過 K-Fold 交叉驗證對比 Random Forest、Lasso 及 Linear Regression 等演算法之擬合度與泛化能力。
 
-### 5. 企業資通安全內部控制有效性之個案研究
+### 6. 企業資通安全內部控制有效性之個案研究
 - **技術棧**：`Cybersecurity Governance` `ISO 27001` `Risk Management`
 - **專案簡介**：從監理法規視角出發，盤點資安風險管理重點，比對個案公司內部控制措施，設計自評檢核點並提出資安預算與防護期程最佳化建議。
 
@@ -101,7 +106,7 @@
 
 | 證照 / 檢定名稱 | 主辦單位 | 成果 / 分數 |
 | :--- | :--- | :--- |
-| **iPAS 資安工程師能力鑑定（中級）** | 經濟部產業發展署 | **中級資安規劃實務: 80 分**<br>**資訊安全防護實務: 87.5 分** |
+| **iPAS 資安工程師能力鑑定（中級）** (2025獲證) | 經濟部產業發展署 | **中級資安規劃實務: 80 分**<br>**資訊安全防護實務: 87.5 分** |
 | **APCS 大學程式設計先修檢測** | 國立臺灣師範大學 | **觀念題：四級分** / **實作題：二級分** |
 | **MTA: Python 程式設計國際認證** | Microsoft | **83 分**（合格門檻 70 分） |
 
@@ -109,6 +114,8 @@
 
 ## 🏆 榮譽與學術成果 (Honors & Awards)
 
+- 🌍 **AMEE 2026 國際醫學教育研討會** 論文共同作者（LLM 與 RAG 應用研究）
+- 🥈 **2024「打造綠色校園！ESG永續淨零提案競賽」銀獎**（跨領域永續商業提案與數據分析）
 - 🥇 **研討會論文發表與海報論文獎**（ChatGPT 與 Line Bot 設計英文查詢之應用研究）
 - 🏅 **台北市市長獎**（高中畢業傑出綜合表現）
 - 🥉 **輔仁大學學期學業成績優異**：大一上學期總成績全系 **第 3 名**（GPA 89.76）
@@ -116,9 +123,11 @@
 
 ---
 
-## 👥 領導與社群經歷 (Leadership & Activities)
+## 👥 領導與資安實戰經歷 (Leadership & Experience)
 
-- **輔仁大學 資安系學會會長** (2025/09 ~ 至今)
+- **2026 教育體系資安攻防演練 — 攻防檢測員**
+  - 受邀參與教育部體系資安實戰攻防檢測，執行紅藍方演練、校園系統脆弱點辨識與防禦檢核。
+- **2025 輔仁大學 人工智慧與資訊安全系學會 會長** (2025/09 ~ 至今)
   - 領導 20 人核心幹部團隊，籌劃並執行 5 場以上活動（包括耶誕舞會、制服晚會等百人規模活動）。
   - 累積觸及超過 300 位學生，統籌活動企劃、預算控管、贊助洽談與跨部門協調。
 - **COSCUP 台灣開源人年會**：議程組志工，協助講者對接、場地設備與時間掌控。

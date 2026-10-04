@@ -30,7 +30,7 @@ Aspiring Cybersecurity and AI Engineer currently pursuing a Bachelor’s degree 
 
 ## 📜 Certifications & Credentials
 
-- **iPAS Intermediate Information Security Engineer Certification**  
+- **2025 iPAS Intermediate Information Security Engineer Certification (Certified)**  
   *Ministry of Economic Affairs (MOEA), Taiwan*
   - Information Security Planning Practice: **80 / 100**
   - Information Security Defense Practice: **87.5 / 100**
@@ -42,17 +42,32 @@ Aspiring Cybersecurity and AI Engineer currently pursuing a Bachelor’s degree 
 
 ---
 
+## 🏆 Honors & Awards
+
+- 🌍 **AMEE 2026 International Medical Education Conference**: Co-author of accepted paper on LLM & RAG application.
+- 🥈 **Silver Award**, 2024 "Create a Green Campus! ESG Net-Zero Sustainable Proposal Competition".
+- 🥇 **Best Conference Paper & Poster Award** (ChatGPT & Line Bot English Learning Assistant research).
+- 🏅 **Taipei City Mayor’s Award** (Distinguished graduate achievement).
+- 🥉 **Academic Excellence Award**: Ranked **3rd / 53 students** at FJU (GPA 89.76/100).
+- 🏆 **7x Technology & Living Technology Competition Awards** (Team Captain, Arduino + 3D Design).
+
+---
+
 ## 🛠️ Technical Skills
 
 - **Languages**: Python (Advanced), Java, C, C++, C#, SQL, HTML5/CSS3, JavaScript
 - **Security & Network**: Penetration Testing, Kali Linux, Vulnerability Assessment (BFLA / OWASP Top 10), picoCTF, Reverse Engineering (Buffer Overflow basics), Cryptography (RSA prime factorization, symmetric/asymmetric, hashing), ISO 27001 compliance, Firewalls, TCP/IP, VMware, VirtualBox
-- **AI & Data Science**: Scikit-Learn, Random Forest, Lasso, Linear Regression, Cross-Validation, Pandas, OpenAI API integration (GPT-3/4)
+- **AI & Data Science**: LLM & RAG, Prompt Engineering, Scikit-Learn, Random Forest, Lasso, Linear Regression, Cross-Validation, Pandas, OpenAI API integration (GPT-3/4)
 - **Web & Frameworks**: Django, Jekyll, RESTful APIs, XAMPP, ngrok Webhooks
 - **Hardware & Tools**: Git, GitHub, Linux/Bash, Vim, Arduino (IoT / Obstacle Avoidance Cars), Rhino 3D, Blender, Figma
 
 ---
 
 ## 🚀 Key Projects & Research
+
+### **[AMEE 2026] International Medical Education Conference Paper** | *Co-Author* `2026`
+- Co-authored research exploring Large Language Models (LLM) combined with Retrieval-Augmented Generation (RAG) in specialized medical education and simulation.
+- Engineered contextual vector retrieval, chunking pipelines, and prompt frameworks to minimize hallucinations and deliver validated clinical guidance.
 
 ### **[api-auth-scanner-bfla](https://github.com/jerry940917chen/api-auth-scanner-bfla)** | *Developer*
 - Built an automated scanner detecting **Broken Function Level Authorization (BFLA)** vulnerabilities across RESTful APIs.
@@ -76,7 +91,11 @@ Aspiring Cybersecurity and AI Engineer currently pursuing a Bachelor’s degree 
 
 ---
 
-## 👥 Leadership & Community Service
+## 👥 Leadership & Cybersecurity Experience
+
+### **Cybersecurity Attack-Defense Exercise Inspector**, Ministry of Education System `2026`
+- Appointed as an inspector for nationwide educational cybersecurity attack-defense drills, evaluating real-world system posture and vulnerabilities.
+- Conducted penetration verification, identified access control flaws, and delivered remediation roadmaps for inspected institutions.
 
 ### **President**, AI & Information Security Student Association, FJU `Sep 2025 – Present`
 - Leading an executive board of 20 officers, overseeing planning, budgeting, and execution of department-wide programs.
